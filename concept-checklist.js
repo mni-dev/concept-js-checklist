@@ -41,7 +41,13 @@ const modulus = firstNum % secondNum;
 
 const yourNum = 65;
 const myNum = 56;
-if(yourNum > myNum == true){
+yourNum > myNum // greater than
+yourNum < myNum // less than
+yourNum >= myNum // greater than or equal to
+yourNum <= myNum // less than or equal to
+yourNum == myNum // equal to
+yourNum != myNum // not equal to
+/* if(yourNum > myNum == true){
     // console.log('you are lucky.');
 }
 if(yourNum < myNum == false){
@@ -66,7 +72,8 @@ if(yourNum < myNum == false){
     console.log('oops.');
 }else{
     console.log('you are lucky.');
-} */
+} */ 
+
 
 // Checklist No. 5: Fullfil conditions
 
