@@ -75,8 +75,25 @@ if(yourNum < myNum == false){
 } */ 
 
 
-// Checklist No. 5: Fullfil conditions
+// Checklist No. 5 & 6: Fullfil conditions
+//a)
+const isInvestTime = true;
+const isMethodTactful = false;
+let result;
+/* if(isInvestTime == true && isMethodTactful == false){
+    result = 'You can be a web dev if you try.'
+}else{
+    result = 'You have challenges towards being a web dev.'
+} */
 
+/* if(isMethodTactful == false || isInvestTime == true){
+    result = 'You can be a web dev if you try.'
+}
+else{
+    result = 'You have challenges towards being a web dev.'
+}
+console.log(result);*/
+//b)
 const gotJob = true;
 const completeMasters = true;
 /* if(gotJob == true && completeMasters == true){
@@ -91,7 +108,7 @@ const completeMasters = true;
     console.log('complete your masters first')
 } */
 
-// Checklist No. 6: Write While Loop to find odd numbers
+// Checklist No. 7: Write While Loop to find odd numbers
 
 /* let oddNum = 7;
 while(oddNum<=19){
@@ -102,17 +119,16 @@ while(oddNum<=19){
     oddNum++;
 } */
 
-// Checklist No. 7: ARRAY
+// Checklist No. 8: ARRAY
 
 const myArray = ['nazrul', 'sanaul', 'kairul', 'rabiul'];
 const arrLen = myArray.length;
 // console.log(arrLen);
 const arrIndex = myArray.indexOf('kairul');
 // console.log(arrIndex);
-const arrElement = myArray[1];
+// const arrElement = myArray[1];
 // console.log(arrElement);
-const updateElem = myArray[1]='shafiul';
-// console.log(updateElem);
+myArray[1] = 'rakibul';
 // console.log(myArray);
 const updateLastElem = myArray[myArray.length-1] = 'munirul';
 // console.log(myArray);
@@ -127,15 +143,23 @@ const updateLastElem = myArray[myArray.length-1] = 'munirul';
 const isElemExist = myArray.includes('munirul');
 // console.log(isElemExist);
 
-// Checklist No. 8: For Loop to display an ARRAY LIST
+// Checklist No. 9: Loop to display an ARRAY LIST
 
-/* const cities = ['dhaka', 'chtg', 'darul', 'jamul'];
-for(let city = 0; city<cities.length; city++){
+const cities = ['dhaka', 'delhi', 'darussalam', 'beirut'];
+//a) for loop
+/*for(let city = 0; city<cities.length; city++){
     let cityName = cities[city];
     console.log(cityName);
 } */
+//b)for...of loop
+/* for(let city of cities){
+    let cityName = cities[city];
+    cityName = city;
+    console.log(cityName);
+} */
+ 
 
-// Checklist No. 9: display the numbers bigger than 80 from an ARRAY LIST
+// Checklist No. 10: display numbers bigger than 80 from an ARRAY LIST
 
 const numList = [79, 80, 59, 86, 78, 89, 88, 63, 90];
 const eightyPlus = numList.filter(element=> element>80);
@@ -144,7 +168,7 @@ const numOnly = eightyPlus;
 // console.log(numList.join(','));
 // console.log(eightyPlusArr);
 
-// Checklist No. 10: FUNCTION with 3 params to display their multiplication
+// Checklist No. 11: FUNCTION with 3 params to display their multiplication
 
 function productOfThree(a, b, c){
     // const productOf2 = a * b;
@@ -156,7 +180,7 @@ function productOfThree(a, b, c){
 const productResult = productOfThree(5, 8, 9);
 // console.log(productResult);
 
-// Checklist No. 11: Declare an OBJECT and change any property of it
+// Checklist No. 12: Declare an OBJECT and change any property of it
 
 /* let myObj = {
     myCountry: 'Bangladesh',
